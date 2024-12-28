@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<!-- 
+  <video autoplay loop muted plays-inline class="background-clip">
+    <source src="3012528-hd_1280_720_30fps.mp4" >
+</video> -->
+
+  <div class="container">
+    <h1>CV Generator</h1>
+
+    <!-- Form to collect user input -->
+    <form id="cvForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your Full Name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="education">Education</label>
+      <textarea id="education" placeholder="e.g. Degree, University, Year" required></textarea>
+
+      <label for="experience">Experience</label>
+      <textarea id="experience" placeholder="e.g. Job Title, Company, Dates" required></textarea>
+
+      <label for="skills">Skills</label>
+      <textarea id="skills" placeholder="e.g. JavaScript, Python, etc." required></textarea>
+
+      <button type="submit">Generate CV</button>
+    </form>
+
+    <div id="cvPreview" class="cv-preview">
+      <!-- Preview section will be populated here -->
+    </div>
+
+    <button id="downloadCv" style="display: none;">Download PDF</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+    
+
+
